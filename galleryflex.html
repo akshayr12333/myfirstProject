@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image gallery</title>
+    <meta charseth="UTF-8" />
+    <meta lang="en" />
+    <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+    <style type="text/css">
+      * {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+}
+
+h1 {
+  font-family: arial;
+  font-size: 3em;
+  text-align: center;
+  margin: 25px;
+  padding: 50px;
+  background-color: #1d2d50;
+  color: #fcdab7;
+  overflow: hidden;
+}
+
+#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.column img {
+  vertical-align: middle;
+  margin-top: 16px;
+  filter: ;
+}
+
+.column:nth-child(even) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+    </style>
+  </head>
+  
+  <body>
+    <h1>KARDE BEACH</h1>
+    <div id="flexbox">
+      <div class="column">
+      <a target="_blank" href="beach16.jpg"><img src="beach16.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach15.jpg"><img src="beach15.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach14.jpg"><img src="beach14.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="karde1.jpg"><img src="karde1.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="karde2.jpg"><img src="karde2.jpg" alt="Forest" width="100%"></a>
+      </div>
+      <div class="column">
+      <a target="_blank" href="beach1.jpg"><img src="beach1.jpg" alt="Forest" width="100%"></a>  
+      <a target="_blank" href="beach2.jpg"><img src="beach2.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach7.jpg"><img src="beach7.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach8.jpg"><img src="beach8.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="karde3.jpg"><img src="karde3.jpg" alt="Forest" width="100%"></a>
+      </div>
+      <div class="column">
+      <a target="_blank" href="beach3.jpg"><img src="beach3.jpg" alt="Forest" width="100%"></a>  
+      <a target="_blank" href="beach4.jpg"><img src="beach4.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="main3.jpg"><img src="main3.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach10.jpg"><img src="beach10.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach9.jpg"><img src="beach9.jpg" alt="Forest" width="100%"></a>
+      </div>
+      <div class="column">
+      <a target="_blank" href="beach13.jpg"><img src="beach13.jpg" alt="Forest" width="100%"></a>  
+      <a target="_blank" href="beach6.jpg"><img src="beach6.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach11.jpg"><img src="beach11.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="beach5.jpg"><img src="beach5.jpg" alt="Forest" width="100%"></a>
+      <a target="_blank" href="main4.jpg"><img src="main4.jpg" alt="Forest" width="100%"></a>
+      </div>     
+    </div>
+  </body>
+</html>
